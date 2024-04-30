@@ -4,7 +4,7 @@
 - ### Hexadecimal
 ## Basics of x86 Architecture 
 
-![CPU Architecture](/Assets/Pasted%20image%2020240428134947.png)
+![CPU Architecture](/Assets/Assembly/Pasted%20image%2020240428134947.png)
 
 - CPU
 	- ALU - A part of the CPU that carries out arithmetic or logical operations like `ADD`, `AND`,`OR` ,`NOT`
