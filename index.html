@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Programming Notes</title>
+    <style>
+        /* Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        
+        /* Light mode */
+        :root {
+            --bg-color: #f0f0f0;
+            --text-color: #333;
+            --link-color: #007bff;
+            --hover-color: #0056b3;
+        }
+        
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #161616;
+                --text-color: #f0f0f0;
+                --link-color: #4aa3df;
+                --hover-color: #67b4f3;
+            }
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: linear-gradient(135deg,#4aa3df,#d346b1,#ff6f61, #ffa931, #ff6f61, #d346b1, #4aa3df, #67b4f3);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: moveGradient 40s linear infinite alternate-reverse;
+            background-size: 200% auto;
+        }
+        
+        @keyframes moveGradient {
+            0% {
+                background-position: left;
+            }
+            100% {
+                background-position: right;
+            }
+        }
+        
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: var(--text-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+            font-family: 'Comic Sans MS', cursive;
+            font-weight: 700;
+            font-size: 20px;
+            padding: 3px 15px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.7);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            transform: translateY(-2px);
+        }
+        
+        .note {
+            font-size: 16px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Programming Notes! 📚</h1>
+        <p>Welcome to my programming notes repository! Here you'll find my notes on various programming topics, including Assembly and Rust.</p>
+
+        <h2>About Me 🙋‍♂️</h2>
+        <p>I'm passionate about learning and exploring different programming languages and concepts. This repository serves as a collection of my notes and thoughts as I delve into the world of programming.</p>
+
+        <h2>Programming Topics 🖥️</h2>
+        <ul>
+            <li><a href="./Assembly">Assembly</a></li>
+            <li><a href="./Rust">Rust</a></li>
+        </ul>
+
+        <p class="note"><strong>Note:</strong> Click on the links above to access my notes on Assembly and Rust respectively. Happy coding! 😊</p>
+    </div>
+</body>
+</html>
